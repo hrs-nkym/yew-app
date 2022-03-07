@@ -29,7 +29,7 @@ pub fn todo_list() -> Html {
 	html! {
 		<ul class="list-group">
 		  {todo_item.iter().map(|todo| html! {
-			<TodoItem title={todo.title.clone()} completed={todo.completed} />
+				<TodoItem title={todo.title.clone()} completed={todo.completed} />
 		  }).collect::<Html>()}
 		</ul>
 	}
